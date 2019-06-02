@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>News</display-name>
+  <filter>
+  	<filter-name>LoginFilter</filter-name>
+  	<filter-class>com.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>LoginFilter</filter-name>
+  	<url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>InsertManager</servlet-name>
+    <servlet-class>com.servlet.InsertManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditManager</servlet-name>
+    <servlet-class>com.servlet.EditManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteManager</servlet-name>
+    <servlet-class>com.servlet.DeleteManager</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertClassify</servlet-name>
+    <servlet-class>com.servlet.InsertClassify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditClassify</servlet-name>
+    <servlet-class>com.servlet.EditClassify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteClassify</servlet-name>
+    <servlet-class>com.servlet.DeleteClassify</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>InsertArticle</servlet-name>
+    <servlet-class>com.servlet.InsertArticle</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditArticle</servlet-name>
+    <servlet-class>com.servlet.EditArticle</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteNews</servlet-name>
+    <servlet-class>com.servlet.DeleteNews</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.servlet.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ArticleListServlet</servlet-name>
+    <servlet-class>com.servlet.ArticleListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ItemServlet</servlet-name>
+    <servlet-class>com.servlet.ItemServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>InsertManager</servlet-name>
+    <url-pattern>/admin/insertManager</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>EditManager</servlet-name>
+    <url-pattern>/admin/EditManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteManager</servlet-name>
+    <url-pattern>/admin/deleteManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertClassify</servlet-name>
+    <url-pattern>/admin/insertClassify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditClassify</servlet-name>
+    <url-pattern>/admin/editClassify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteClassify</servlet-name>
+    <url-pattern>/admin/deleteClassify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertArticle</servlet-name>
+    <url-pattern>/admin/insertArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditArticle</servlet-name>
+    <url-pattern>/admin/editArticle</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteNews</servlet-name>
+    <url-pattern>/admin/deleteNews</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/index.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleListServlet</servlet-name>
+    <url-pattern>/articleList.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/search.html</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ItemServlet</servlet-name>
+    <url-pattern>/item.html</url-pattern>
+  </servlet-mapping>
+
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
